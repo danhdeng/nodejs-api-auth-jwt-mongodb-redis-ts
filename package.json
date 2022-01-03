@@ -1,0 +1,46 @@
+{
+    "name": "nodejs-api-auth-jwt-mongodb-redis-ts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node dist/index.js",
+        "dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",
+        "build": "tsc",
+        "postinstall": "npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/compression": "^1.7.2",
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/morgan": "^1.9.3",
+        "@types/node": "^17.0.6",
+        "@typescript-eslint/eslint-plugin": "^5.8.1",
+        "@typescript-eslint/parser": "^5.8.1",
+        "eslint": "^8.6.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "^2.5.1",
+        "tsc-watch": "^4.6.0",
+        "typescript": "^4.5.4"
+    },
+    "dependencies": {
+        "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.2",
+        "helmet": "^5.0.0",
+        "module-alias": "^2.2.2",
+        "mongoose": "^6.1.4",
+        "morgan": "^1.10.0"
+    },
+    "_moduleAlias": {
+        "@/resources": "dist/resources",
+        "@/utils": "dist/utils/",
+        "@/middleware": "dist/middleware/"
+    }
+}
