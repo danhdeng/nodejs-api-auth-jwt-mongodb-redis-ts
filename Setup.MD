@@ -6,6 +6,14 @@ npm i module-alias
 
 npm i mongoose compression cors morgan helmet
 
+# package to validate environment variables
+
+npm i envalid
+
+# install the validation package
+
+npm i joi
+
 # install dependencies package
 
 npm i -D typescript tsc-watch eslint prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin @types/node @types/express @types/compression @types/cors @types/morgan
