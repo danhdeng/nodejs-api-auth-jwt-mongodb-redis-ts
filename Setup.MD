@@ -14,9 +14,13 @@ npm i envalid
 
 npm i joi
 
+#install the package for generating token and hash password
+
+npm i jsonwebtoken bcrypt
+
 # install dependencies package
 
-npm i -D typescript tsc-watch eslint prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin @types/node @types/express @types/compression @types/cors @types/morgan
+npm i -D typescript tsc-watch eslint prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin @types/node @types/express @types/compression @types/cors @types/morgan @types/jsonwebtoken @types/bcrypt
 
 # create typescript config file and update base url and add to path section
 

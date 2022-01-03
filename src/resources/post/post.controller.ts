@@ -31,7 +31,7 @@ class PostController implements Controller {
 
             res.status(201).json({ post });
         } catch (error: any) {
-            next(new HttpException(401, error.message));
+            next(new HttpException(400, error.message));
         }
     };
 }
