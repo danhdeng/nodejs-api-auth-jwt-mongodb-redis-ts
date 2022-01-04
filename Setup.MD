@@ -27,6 +27,7 @@ npm i -D typescript tsc-watch eslint prettier eslint-config-prettier eslint-plug
 npx tsc --init
 
 ```Json
+  "outDir": "dist"
   "baseUrl": "./src" /* Specify the base directory to resolve non-relative module names. */,
     "paths": {
       "@/resources/*": ["resources/*"],
@@ -39,9 +40,35 @@ npx tsc --init
 
 touch .eslintrc.js
 
+```Json
+module.exports = {
+    parser: '@typescript-eslint/parser',
+    extends: [
+        'plugin:@typescript-eslint/recommended',
+        'prettier/@typescript-eslint',
+        'plugin:prettier/recommended',
+    ],
+    parserOptions: {
+        ecmaVersion: 2018,
+        sourceType: 'module',
+    },
+    rules: {},
+};
+
+```
+
 # create prettier config file
 
 touch .prettierrc.js
+
+```Json
+  module.exports = {
+  tabWidth: 4,
+  singleQuote: true,
+  semi: true,
+};
+
+```
 
 # add module alias to package.json file
 
