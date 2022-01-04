@@ -1,4 +1,4 @@
-import e, { Request, Response, NextFunction, RequestHandler } from 'express';
+import { Request, Response, NextFunction, RequestHandler } from 'express';
 import Joi from 'joi';
 
 function validationMiddleware(schema: Joi.Schema): RequestHandler {
